@@ -1,0 +1,98 @@
+.mywork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 10%;
+}
+
+.mywork-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.title-box {
+    margin-bottom: 2rem;
+  }
+  
+  
+  /* Containerul cardurilor aranjate pe orizontală */
+  .work-cards-container {
+    display: flex;
+    flex-direction: row; /* Aliniază cardurile orizontal */
+    gap: 2rem; /* Spațiere între carduri */
+    justify-content: center; /* Centrare pe ecran */
+    flex-wrap: nowrap; /* Nu permite cardurilor să treacă pe rânduri noi */
+    overflow-x: auto; /* Adaugă scroll orizontal dacă nu încape tot */
+    padding-bottom: 1rem; /* Spațiu pentru scroll bar */
+  }
+  
+  /* Stilurile individuale ale fiecărui card */
+  .work-card {
+    background: linear-gradient(270deg, #DF8908 10.36%, #44214e 102.06%);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    min-width: 300px; /* Dimensiune minimă pentru fiecare card */
+    max-width: 3000px; /* Dimensiune maximă fixată pentru consistență */
+  }
+  
+  .work-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #D8D8D8;
+  }
+  
+  .work-card h3 {
+    font-size: 1.2rem;
+    color: #0c0202;
+    margin-bottom: 0.5rem;
+  }
+  
+  .work-card p {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 0.31rem;
+   
+  }
+  .work-card p1 {
+    color: #e6d8d8;
+    font-size: 0.91rem;
+    margin-bottom: 1rem;
+  }
+  
+  .work-card ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    margin-top: 1.5rem;
+    
+    
+  }
+  
+  .work-card li {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #efefef;
+    
+  }
+  
+  /* Asigură că stilul arată bine și pe ecrane mici */
+
+@media(max-width:930px){
+    .mywork{
+        gap: 50px;
+        margin: 50px 6%;
+        align-items: start;
+    }
+    
+    .mywork-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .work-cards-container {
+        flex-wrap: wrap; /* Permite cardurilor să se mute pe linii noi la ecrane mici */
+      }
+}
